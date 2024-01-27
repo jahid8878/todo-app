@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   
+    <div class="cards">
+        <h1>Add notes</h1>
+        <div class="inputs">
+            <input autofocus="true" class="input-field" type="text" placeholder="Text Here..." required>
+            <input class="btn" type="button" value="Add">
+        </div>
+        <ol class="notes">
+            
+        </ol>
+        <p class="footer">Created by <a href="https://jahid-hasan-website.netlify.app/" target="_blank">Jahid Hasan</a> | 2024</p>
+    </div>
+    <div class="popup">
+        <div class="txx">
+            <p class="up-t">Are you sure</p>
+            <p>You want to delete this notes permanently</p>
+        </div>
+        <div class="delete-btn">
+            <button onclick="can()" type="submit" class="cc">Cancel</button>
+            <button id="sure-btn" type="submit" >Of,Course</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

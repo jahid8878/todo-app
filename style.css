@@ -1,0 +1,235 @@
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(168, 241, 241);
+    flex-direction: column;
+}
+
+.cards{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 30px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(203, 162, 245);
+    height:400px;
+    width: 350px;
+}
+
+ .popup{
+    background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    border-radius: 10px;
+    padding: 15px 20px 10px;
+    box-shadow: 2px 2px 4px rgb(216, 192, 240);
+    height:150px;
+    width: 230px;
+    animation: ii 0.5s 1 ease-in;
+    display: none;
+}
+@keyframes ii {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
+
+.popup .txx{
+    text-align: center;
+}
+
+.popup .txx p{
+    font-size: 17px;
+    margin-top: -2px;
+    opacity: 0.7;
+}
+
+.popup .txx .up-t{
+    font-size: 25px;
+    font-weight: 600;
+    opacity: 1;
+    margin-bottom: 10px;
+    
+}
+
+.popup .delete-btn{
+    margin-left: 17px;
+    margin-top: 20px;
+}
+
+.popup .delete-btn button{
+   outline: 0;
+   border: none;
+   padding: 8px 12px;
+   border-radius: 5px;
+   background-color: tomato;
+   font-weight: 600;
+   color: #fff;
+   cursor: pointer;
+}
+
+.popup .delete-btn button:hover{
+   background-color: rgb(245, 61, 28);
+}
+.popup .delete-btn .cc{
+   background-color: rgb(24, 207, 24);
+   margin-right: 10px;
+}
+
+.popup .delete-btn .cc:hover{
+   background-color:  rgb(16, 160, 16);
+}
+
+
+.cards h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline green;
+    cursor: not-allowed;
+}
+
+.cards .inputs{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cards .inputs .input-field{
+    height: 100%;
+    outline: none;
+    width: calc(100% - 55px);
+    margin: 0;
+    padding: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid blue;
+    border-right: none;
+    cursor: pointer;
+
+}
+
+.cards .inputs .btn{
+    height: 100%;
+    width: 54px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 0px 5px 5px 0;
+    position: absolute;
+    cursor: pointer;
+}
+.cards .inputs .btn:hover{
+    background-color: rgb(7, 7, 202);
+}
+
+.cards .notes{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(84, 114, 104);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.cards .notes::-webkit-scrollbar{
+    display: none;
+}
+
+.cards .notes .show{
+    width: 100%;
+    background-color: aliceblue;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+
+}
+.cards .notes .show p{
+    font-size: 17px;
+}
+
+.cards .notes .show .pp{
+    text-decoration: line-through green 3px;
+    opacity: 0.5;
+}
+
+.cards .notes .show div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cards .notes .show div .dlBtn{
+    outline: none;
+    background: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.cards .notes .show div .dlBtn:hover{
+    background-color: rgb(206, 14, 14);
+}
+
+.cards .notes .show div .ckBtn{
+    outline: none;
+    background: green;
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.cards .notes .show div .ckBtn:hover{
+    background-color: rgb(4, 100, 4);
+}
+
+.cards .footer{
+    font-size: 11px;
+    margin-top: 5px;
+}
+.cards .footer a{
+    text-decoration: none;
+    color: crimson;
+}
+.cards .footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 550px) {
+    body{
+        align-items: center;
+        margin-top: -70px;
+    }
+}
